@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21208.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21191"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF UI Display Regular.ttf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="sf-ui-display-medium-58646be638f96.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarCell" rowHeight="407" id="KGk-i7-Jjw" customClass="CarCell" customModule="CarsInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="407"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="407"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e4B-h2-GZd" customClass="ImageLoader" customModule="CarsInfo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="303"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="303" id="Ltw-ft-7MU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVR-Z2-fa5">
+                        <rect key="frame" x="16" y="344" width="268" height="15.666666666666686"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                        <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z1-y3-0KX">
+                        <rect key="frame" x="16" y="379.66666666666669" width="268" height="16.333333333333314"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhp-i2-95S">
+                        <rect key="frame" x="16" y="311" width="268" height="28"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PVR-Z2-fa5" firstAttribute="top" secondItem="lhp-i2-95S" secondAttribute="bottom" constant="5" id="6V5-4I-sm0"/>
+                    <constraint firstItem="1Z1-y3-0KX" firstAttribute="top" secondItem="PVR-Z2-fa5" secondAttribute="bottom" constant="20" id="BBY-XI-iyg"/>
+                    <constraint firstItem="PVR-Z2-fa5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="D1H-JZ-mcx"/>
+                    <constraint firstItem="e4B-h2-GZd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MC9-vZ-NFx"/>
+                    <constraint firstAttribute="trailing" secondItem="e4B-h2-GZd" secondAttribute="trailing" id="N2P-Gg-qn5"/>
+                    <constraint firstItem="e4B-h2-GZd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Oge-89-AX8"/>
+                    <constraint firstItem="lhp-i2-95S" firstAttribute="top" secondItem="e4B-h2-GZd" secondAttribute="bottom" constant="8" symbolic="YES" id="cxJ-mp-psu"/>
+                    <constraint firstAttribute="trailing" secondItem="lhp-i2-95S" secondAttribute="trailing" constant="16" id="di6-cP-IoK"/>
+                    <constraint firstItem="1Z1-y3-0KX" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dj1-6E-OhB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1Z1-y3-0KX" secondAttribute="bottom" id="gCK-Ty-Vsr"/>
+                    <constraint firstItem="1Z1-y3-0KX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="pcS-ir-eva"/>
+                    <constraint firstItem="PVR-Z2-fa5" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="qmp-ja-yLK"/>
+                    <constraint firstItem="lhp-i2-95S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="tv5-A0-CK1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="carImageView" destination="e4B-h2-GZd" id="jB0-cp-DTE"/>
+                <outlet property="dateTimeLabel" destination="PVR-Z2-fa5" id="Zpe-eS-vEg"/>
+                <outlet property="descriptionLabel" destination="1Z1-y3-0KX" id="vRm-WK-qIh"/>
+                <outlet property="titleLabel" destination="lhp-i2-95S" id="49X-iI-wDU"/>
+            </connections>
+            <point key="canvasLocation" x="127.69230769230769" y="111.61137440758293"/>
+        </tableViewCell>
+    </objects>
+</document>
